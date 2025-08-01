@@ -1,3 +1,22 @@
+1. The client-server model: The client makes a request to the server, and the server processes the request and sends back the response.
+2. Cloud Computing -> On-demand delivery of IT resources over the internet with pay-as-you-go pricing.
+3. Cloud deployment types:
+     1. Cloud based deployment -> Flexibility to migrate your existing resources to the cloud, design and build new applications within the cloud environment, or use a combination of both.
+     2. On-premises deployment -> Deploying resources on premises using virtualization and resource management tools. This has the ability to provide dedicated resources and low latency.
+     3. Hybrid deployment -> Cloud-based resources and on-premises infrastructure work together.
+4. Key benifits of AWS Cloud:
+   1. Businesses can transition from fixed investments to variable costs.
+   2. The vast global infrastructure of AWS can result in lower costs for customers.
+   3. Customers can dynamically scale AWS Cloud resources up or down based on real-time demand.
+   4. Businesses can rapidly deploy applications and services.
+   5. Stop spending money to run and maintain data centers.
+   6. Businesses don't need to set up their own infrastructure to expand internationally.
+5. AWS Regions are physical locations around the world that contain groups of data centers.
+6. These groups of data centers are called Availability Zones.
+7. Each AWS Region consists of a minimum of three physically separate Availability Zones within a geographic area.
+8. Regions and Availability Zones are designed to provide low-latency, fault-tolerant access to services for users within a given area.
+
+
 ## Amazon EC2
 1. Amazon Elastic Compute Cloud.
 2. Advantages: Highly Flexible, Cost-effective, and Quick.
