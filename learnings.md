@@ -92,3 +92,39 @@
 5. EventBridge: Route events from sources like custom apps, AWS services, and third-party software to other applications. EventBridge simplifies the process of receiving, filtering, transforming, and delivering events, so you can quickly build reliable applications. Even if one service fails, EventBridge will store the event and process it as soon as the service is available again.
 6. Amazon SQS: a message queuing service that facilitates reliable communication between software components. It can send, store, and receive messages at any scale, making sure messages are not lost and that other services don't need to be available for processing. In Amazon SQS, an application places messages into a queue, and a user or service retrieves the message, processes it, and then removes it from the queue.
 7. Amazon SNS: Amazon SNS is a publish-subscribe service that publishers use to send messages to subscribers through SNS topics. In Amazon SNS, subscribers can include web servers, email addresses, Lambda functions, and various other endpoints.
+
+## Serverless computing
+1. Serverless means that you can’t actually see or access the underlying infrastructure or instances that are hosting your application.
+2. AWS offers both unmanaged and managed services to suit different levels of control and responsibility.
+3. Unmanaged: Compute services like Amazon EC2, AWS takes care of the underlying physical infrastructure, but you're responsible for setting up, securing, and maintaining the operating system, network configurations, and applications on your instances.
+4. Managed: Managed services handle most of the infrastructure for you, but you still need to set up things like deployment options, scaling, and environment settings. 
+5. Full-managed: The underlying infrastructure is fully managed by AWS, so you can focus entirely on writing and deploying code.
+
+## AWS Lambda
+1. Lambda is a serverless compute service that runs code in response to events without the need to provision or manage servers.
+2. Steps to use Lambda:
+   1. Upload code to Lambda, which uploads as a Lambda function.
+   2. Set code to trigger from an event source.
+   3. Run code triggered.
+   4. Pay only for the compute time used.
+3. The key components of AWS Lambda are the function, triggers, and runtimes. These components handle code, respond to events, and provide the language environment.
+
+## Containers
+1. Containers contain Code, Configuration, Dependencies, and Runtime.
+2. Containers are faster and lighter than virtual machines (VMs) because they share the host computer’s operating system.
+3. VMs use a hypervisor to run full, separate operating systems, which makes them less resource-efficient and have longer startup times.
+4. Containers solve deployment failings due to debugging by keeping the application’s environment consistent everywhere, making deployments smoother and assisting troubleshooting.
+5. As containers increase across multiple hosts, orchestration tools come in. They automate deployment, scaling, and management to keep everything running smoothly.
+6. Amazon ECS: Amazon Elastic Container Service (Amazon ECS) is a scalable container orchestration service for running and managing containers on AWS.
+7. ECS launch types:
+   1. Amazon ECS with Amazon EC2 is ideal for small-to-medium businesses that need full control over infrastructure. Suitable for custom applications requiring specific hardware or networking configurations.
+   2. Amazon ECS with AWS Fargate is perfect for startups or small teams building web applications with variable traffic. It's a serverless option—no server management required—so teams can focus on development while Amazon ECS handles scaling and orchestration.
+8. Amazon EKS: Amazon Elastic Kubernetes Service (Amazon EKS) is a fully managed service for running Kubernetes on AWS. It simplifies deploying, managing, and scaling containerized applications using open-source Kubernetes, with ongoing support and updates from the broader community.
+9. Amazon Elastic Container Registry (Amazon ECR) is where you can store, manage, and deploy container images.
+10. AWS Fargate is a serverless compute engine for containers. It works with both Amazon ECS and Amazon EKS. Fargate is a container hosting platform, unlike Amazon ECS and Amazon EKS, which are both container orchestration services.
+
+## AWS Compute services
+1. Elastic Beanstalk: Fully managed service that streamlines the deployment, management, and scaling of web applications.
+2. AWS Batch: A fully managed service that you can use to run batch computing workloads on AWS. It automatically schedules, manages, and scales compute resources for batch jobs, optimizing resource allocation based on job requirements.
+3. Lightsail: Cloud service offering virtual private servers (VPSs), storage, databases, and networking at a predictable monthly price.
+4. Outposts: A fully managed hybrid cloud solution that extends AWS infrastructure and services to on-premises data centers. It provides a consistent experience between on-premises and the AWS Cloud, offering compute, storage, and networking components.
