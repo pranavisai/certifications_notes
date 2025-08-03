@@ -128,3 +128,19 @@
 2. AWS Batch: A fully managed service that you can use to run batch computing workloads on AWS. It automatically schedules, manages, and scales compute resources for batch jobs, optimizing resource allocation based on job requirements.
 3. Lightsail: Cloud service offering virtual private servers (VPSs), storage, databases, and networking at a predictable monthly price.
 4. Outposts: A fully managed hybrid cloud solution that extends AWS infrastructure and services to on-premises data centers. It provides a consistent experience between on-premises and the AWS Cloud, offering compute, storage, and networking components.
+
+
+## Using AWS Globally
+1. Key considerations while choosing regions:
+   1. Compliance
+   2. Proximity to customer base
+   3. Features availability
+   4. Pricing
+2. Multiple Regions achieve high availability, but it is also important to deploy resources to multiple availability Zones.
+3. These redundant architectures or replicating your resources across multiple levels of AWS infrastructure can improve application reliability so that your users have access to your content when they need it.
+4. CloudFront is a content delivery network (CDN) and caching system.
+5. Edge locations: AWS has a global edge network that provides quicker content access to users outside of standard Regions.
+6. Edge locations are strategically placed in areas like Atlanta, Georgia, USA, or Shanghai, China to provide low-latency access to AWS services and content delivery.
+7. CloudFormation: CloudFormation is a service that helps you model and set up your AWS resources.
+8. Infrastructure as code: A template that describes all the AWS resources that will be needed (like Amazon Elastic Compute Cloud (Amazon EC2) instances).
+9. To interact with AWS resources, you must invoke AWS APIs. To interact with these APIs, you can use the AWS SDKs, the AWS Command Line Interface (AWS CLI), the AWS Management Console, or IaC tools such as CloudFormation.
