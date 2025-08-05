@@ -144,3 +144,12 @@
 7. CloudFormation: CloudFormation is a service that helps you model and set up your AWS resources.
 8. Infrastructure as code: A template that describes all the AWS resources that will be needed (like Amazon Elastic Compute Cloud (Amazon EC2) instances).
 9. To interact with AWS resources, you must invoke AWS APIs. To interact with these APIs, you can use the AWS SDKs, the AWS Command Line Interface (AWS CLI), the AWS Management Console, or IaC tools such as CloudFormation.
+
+## Networking
+1. Amazon Virtual Private Cloud: An Amazon VPC lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.
+2. Subnets: Subnets are used to organize your resources and can be made publicly or privately accessible. A private subnet is commonly used to contain resources like a database storing customer or transactional information. A public subnet is commonly used for resources like a customer-facing website.
+3. Amazon Virtual Private Cloud (VPC): Used to provision an isolated section of the AWS Cloud.
+4. Helps with increased security, time saving and control environment.
+5. A virtual private gateway allows traffic into the VPC only if it is coming from an approved network.
+6. Virtual private network: A VPN encrypts your internet traffic, helping protect it from anyone who might try to intercept or monitor it.
+   
