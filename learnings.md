@@ -152,4 +152,16 @@
 4. Helps with increased security, time saving and control environment.
 5. A virtual private gateway allows traffic into the VPC only if it is coming from an approved network.
 6. Virtual private network: A VPN encrypts your internet traffic, helping protect it from anyone who might try to intercept or monitor it.
-   
+7. Four ways to connect to the AWS Cloud:
+   1. AWS Client VPN: A networking service you can use to connect your remote workers and on-premises networks to the cloud.
+   2. AWS Site-to-Site VPN: Creates a secure connection between your data center or branch offices and your AWS Cloud resources.
+   3. AWS PrivateLink: A highly available, scalable technology that you can use to privately connect your VPC to services and resources as if they were in your VPC.
+   4. AWS Direct Connect: A service that makes it possible for you to establish a dedicated private connection between your network and VPC in the AWS Cloud.
+8. Public subnets contain resources that need to be accessible by the public, such as an online store’s website.
+9. Private subnets contain resources that should be accessible only through your private network, such as a database that contains customers’ personal information and order histories.
+10. A network ACL (Virtual firewall controlling traffic) is a virtual firewall that controls inbound and outbound traffic at the subnet level.
+11. Edge networking is the process of bringing information storage and computing abilities closer to the devices that produce that information and the users who consume it.
+12. Amazon Route 53: A DNS that provides a reliable and cost-effective way to route end users to internet applications.
+13. Amazon CloudFront: A content delivery network (CDN) service that delivers your content with faster loading times, cost savings, and reliability.
+14. AWS Global Accelerator: A service that uses the AWS global network to improve application availability, performance, and security. It uses intelligent traffic routing and fast failover if something goes wrong in one of your application locations.
+15. 
