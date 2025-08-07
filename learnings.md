@@ -164,4 +164,30 @@
 12. Amazon Route 53: A DNS that provides a reliable and cost-effective way to route end users to internet applications.
 13. Amazon CloudFront: A content delivery network (CDN) service that delivers your content with faster loading times, cost savings, and reliability.
 14. AWS Global Accelerator: A service that uses the AWS global network to improve application availability, performance, and security. It uses intelligent traffic routing and fast failover if something goes wrong in one of your application locations.
-15. 
+
+
+## Storage
+1. Types of storage:
+   1. Block Storage: Block storage provides persistent, low-latency block-level storage volumes that attach to EC2 instances like physical hard drives.
+   2. Amazon Elastic Block Store (EBS): A managed service that provides persistent block storage volumes for EC2 instances, offering various types for different workloads. Use cases include database hosting, backup storage for applications, and rapid deployment of development environments using volume snapshots.
+   3. Object Storage: Object storage is a data storage architecture that manages data as objects in a flat address space. Offers unlimited scalability.
+   4. Amazon Simple Storage Service (S3): A fully managed, scalable object storage service for storing and retrieving any amount of data from anywhere. Amazon S3 stores files as objects in containers known as buckets, and each object can range in size from a few bytes to several terabytes. It integrates seamlessly with other AWS services and supports a wide range of use cases, from basic backups to complex data lakes.
+   5. S3 Types:
+      1. S3 Standard: Added by default if nothing special is mentioned.
+      2. S3 Intelligent Tiering: Amazon S3 monitors access patterns of your data and automatically moves your data to the most cost-effective storage tier based on frequency of access.
+      3. S3 Standard-Infrequent Access (S3 Standard-IA): For data that is accessed less frequently but requires rapid access when needed.
+      4. S3 One Zone-Infrequent Access (S3 One Zone-IA): Stores data in a single Availability Zone, reducing costs.
+      5. S3 Express One Zone: Stores data in a single Availability Zone.
+      6. S3 Glacier Instant Retrieval: For archiving data that is rarely accessed and requires millisecond retrieval.
+      7. S3 Glacier Flexible Retrieval offers low-cost storage for archived data that is accessed 1–2 times per year.
+      8. S3 Glacier Deep Archive is the lowest-cost Amazon S3 storage class. It supports long-term retention and digital preservation for data that might be accessed once or twice per year.
+      9. Amazon S3 Outposts delivers object storage to your on-premises AWS Outposts environment using Amazon S3 APIs and features, and serves workloads with local data residency requirements.
+   6. S3 Lifecycle: Configurations to automate the process. Transition actions: define when objects should transition to another storage class. Expiration actions: define when objects expire and should be permanently deleted.
+   7. File Storage: AWS file storage services provide shared file systems accessible over networks, so multiple users and applications can access the same data simultaneously.
+   8. Amazon Elastic File System (EFS): A fully managed, scalable NFS file system for use with AWS Cloud services and on-premises resources.
+   9. Amazon FSx: A fully managed file storage service for popular file systems like Windows, Lustre, and NetApp ONTAP.
+   10. AWS Storage Gateway: A fully managed, hybrid-cloud storage service that provides on-premises access to virtually unlimited cloud storage.
+   11. AWS Elastic Disaster Recovery: A fully managed service that streamlines the recovery of your physical, virtual, and cloud-based servers into AWS.
+   12. Amazon EC2 instance store: Not a stand-alone AWS block storage service. Rather, it refers to the block-level storage that is physically attached to the EC2 instance host computer. Depending on the type of instance, the EC2 instance store might come attached as the default storage. Since its data is lost when an instance is stopped or terminated, EC2 instance store is best for temporary memory-based storage needs like buffers, caches, and scratch data. It is not recommended for applications that require data retention.
+   13. Amazon Data Lifecycle Manager: Automate the creation, retention, and deletion of EBS snapshots. Amazon Data Lifecycle Manager can schedule snapshots during off-peak hours to minimize performance impact and automatically delete outdated backups to control storage costs. It's particularly valuable for large-scale deployments where manual snapshot management would be time-consuming and error-prone.
+   14. S3 buckets: A container for storing objects in Amazon S3. Buckets have a globally unique name across all of AWS, which helps to identify and organize your stored data.
