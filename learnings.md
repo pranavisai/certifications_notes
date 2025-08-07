@@ -191,3 +191,9 @@
    12. Amazon EC2 instance store: Not a stand-alone AWS block storage service. Rather, it refers to the block-level storage that is physically attached to the EC2 instance host computer. Depending on the type of instance, the EC2 instance store might come attached as the default storage. Since its data is lost when an instance is stopped or terminated, EC2 instance store is best for temporary memory-based storage needs like buffers, caches, and scratch data. It is not recommended for applications that require data retention.
    13. Amazon Data Lifecycle Manager: Automate the creation, retention, and deletion of EBS snapshots. Amazon Data Lifecycle Manager can schedule snapshots during off-peak hours to minimize performance impact and automatically delete outdated backups to control storage costs. It's particularly valuable for large-scale deployments where manual snapshot management would be time-consuming and error-prone.
    14. S3 buckets: A container for storing objects in Amazon S3. Buckets have a globally unique name across all of AWS, which helps to identify and organize your stored data.
+
+## Storage services comparison
+1. Amazon S3 excels at scalable object storage for web assets, backups, and more.
+2. Amazon EBS provides block-level storage needed for EC2 instances and databases.
+3. Amazon EFS offers managed shared file systems for workloads that require rapid simultaneous access to files. It automatically grows as data is added and offers POSIX compliance for Linux applications.
+4. Storage Gateway is fundamentally designed as a hybrid solution that connects on-premises environments to AWS Cloud storage. This allows local applications to seamlessly access AWS storage while maintaining local access patterns.
