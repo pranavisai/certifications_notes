@@ -68,4 +68,43 @@
     4. Leverage IAM (Identity and Access Management) for authentication and authorization in OCI.
     5. Key Management: Store all the base model keys securely.
     6. Object storage: Store all the fine-tune model weights.
-    7. 
+29. Langchain is a framework for developing applications powered by language models. Offers a multitude of components that help us build LLM-powered applications.
+30. Examples of components used for building a chatbot: Prompts, LLMs, Memory, Chains, Vector Stores, Document Loaders.
+31. LLM in LangChain refers to pure text completion models. Take a string as input and string completion as output.
+32. Chat models are often backed by LLMs but are tuned to have conversations.
+33. LangChain prompts can be created by using two types of LangChain Prompt Templates.
+    1. Simple prompt template: Created from a formatted Python string, and it can have any number of variables. Output is a string.
+    2. Chat Prompt Template: Supports a list of messages. Each chat message is associated with content and an additional parameter called role.
+34. LangChain Chains:
+    1. Using LCEL (LangChain Expression Language): It is a declarative way to easily compose chains together.
+    2. Create chains using Python classes like LLM chain and others.
+    3. Purpose of Memory: To store various types of data and provide algorithms for summarizing past interactions.
+35. RAG Pipeline:
+    1. Ingestion (Documents -> Chunks -> Embedding -> Index (Database))
+    2. Retrieval (Query -> Index -> Top k results)
+    3. Generation (Top k results -> Response to User)
+36. Difference between semantic search and traditional keyword search (also known as lexical search): Understanding the intent and context of the search.
+37. AI Agents:
+    1. Agents are applications of large language models, packaged and validated and ready to use out of the box.
+       1. They can perform complex tasks on their own.
+       2. Mimic human chain-of-thought processing.
+       3. Be an effective tool for automating processes.
+       4. Utilize your knowledge.
+    2. Architecture:
+       1. Interface: Point where the user interacts with the AI agent.
+       2. Inputs fed to LLM:
+          1. Short/ Long Term Memory: To provide context from past interactions, enabling continuity and relevance in conversations.
+          2. Tools: To integrate different external tools, for example, different APIs, databases, or third-party systems to enhance the model's capabilities.
+          3. Prompt: Contains the specific query or task provided by the user guiding the AI on how to generate responses.
+          4. Knowledge: External databases or document repositories, to enrich its responses with accurate and up-to-date information.
+   3. Key Operations:
+      1. Reasoning: It analyzes the input to generate logical and coherent responses.
+      2. Acting: Determines actions based on the task (example: querying databases or calling different APIs).
+      3. Persona: Maintaining a consistent tone, style, and behavior aligned with the brand or use case.
+      4. Planning: Strategically organizing responses or actions, especially in multi-step workflows.
+   4. Knowledge Base: Vector based storage that can connect to and ingest data from a data source.
+   5. Data sources provide connection onformation to the data stores that an agent uses to generate responses.
+   6. Data ingestion: Process that extracts data from data source documents, converts it into a structured format suitable for analysis and then stores it in a knowledge base.
+   7. Database guidelines:
+      1. Required fields: DOCID, Body, Vector
+      2. Optional fields: CHUNKID, URL, TITLE and PAGE_NUMBERS.
