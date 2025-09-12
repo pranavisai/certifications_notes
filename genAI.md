@@ -36,4 +36,36 @@
     6. Frequency and Presence penalties: Useful to get rid of repetition in outputs.
       1. Frequency penalty: Used to give a penalty to a token that has appeared more times to reduce its appearance in the next times. This helps in showing tokens that have not appeared more.
       2. Presence penalty: Used to apply penalties regardless of frequency. If the token appears, it gets penalized.
-21. 
+21. Embeddings: Numerical representations of a piece of text converted to number sequences. Make it easy for computers to understand the relationships between pieces of text.
+22. Sentence Embeddings: Associates every sentence with a vector of numbers. Similar sentences are assigned to similar vectors and different ones to different vectors.
+23. Prompt Engineering:
+    1. Prompt: The input or initial text provided to the model.
+    2. Prompt Engineering: The process of iteratively refining a prompt for the purpose of eliciting a particular style of response.
+    3. Prompt Formats: LLMs are trained on a specific prompt format. In case of wrong or different formatting, the results can be odd or inferior.
+    4. Advanced prompting strategies: Chain-of-thought and Zero-shot chain-of-thought.
+22. To train LLMs from scratch with one's data: expensive, a huge amount of data is needed, and expertise is required.
+23. So, to train, we can use: in-context learning, RAG (Retrieval Augmented Generation), and fine-tuning.
+24. To customize LLMs with one's data:
+    1. Start with prompt engineering, the easiest way to start, test, and learn quickly.
+    2. In case the context is the problem while testing, then use RAG.
+    3. If needed more intrustuction following, use Fine-tuning.
+25. Dedicated AI cluster unit types: Large Cohere, small Cohere, Embed Cohere, and Large Meta dedicated.
+26. Fine-tuning configuration:
+    1. Training methods: T-Few: PEFT and LoRA (Low Rank Adaptation): PEFT (Parameter Efficient Fine Tuning)
+    2. PEFT: Adjusting a model without changing everything about it.
+    3. Fine-Tuning Parameters
+       1. Total training epochs: Number of iterations through the entire training dataset.
+       2. Training batch size: Number of samples processed before updating model parameters.
+       3. Learning rate: The rate at which model parameters are updated after each batch.
+       4. Early stopping threshold: Minimum improvement in loss required to prevent premature termination of the training process.
+       5. Early stopping patience: Tolerance for stagnation in the loss metric before stopping the training process.
+       6. Log model metrics interval in steps: How often the machine checks and records its progress during its study sessions.
+27. Fine-tuning results: Accuracy, Loss.
+28. GenAI Security:
+    1. GPUs allocated for a customer's genAI tasks are isolated from other GPUs.
+    2. A dedicated GPU cluster only handles fine-tuned models of a single customer.
+    3. Customer data and model isolation.
+    4. Leverage IAM (Identity and Access Management) for authentication and authorization in OCI.
+    5. Key Management: Store all the base model keys securely.
+    6. Object storage: Store all the fine-tune model weights.
+    7. 
